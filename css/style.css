@@ -1,0 +1,124 @@
+.rainbow {
+    background: linear-gradient(90deg,
+            skyblue,
+            white,
+            blue,
+            white,
+            skyblue);
+    background-size: 400%;
+    animation: rainbow 5s linear infinite;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    color: white;
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 100%;
+    }
+}
+
+
+.titre-centre {
+    text-align: center;
+    border: 2px solid skyblue;
+    background-color: skyblue;
+    padding: 10px;
+}
+
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.titre-centre {
+    text-align: center;
+    border: 2px solid skyblue;
+    background-color: skyblue;
+    padding: 10px;
+    color: #003366;
+    margin: 0;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 0;
+    background-color: #111;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    color: skyblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+section {
+    text-align: center;
+    padding: 30px;
+}
+
+img {
+    width: 300px;
+}
+
+.titre-centre {
+    text-align: center;
+    border: 2px solid skyblue;
+    background-color: skyblue;
+    padding: 10px;
+    color: #003366;
+    margin: 0;
+
+    animation: slidein 3s;
+}
+
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+
+        {
+        font-size: 100%;
+        margin-left: 35%;
+        width: 100%;
+    }
+}
+
+body {
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+body.fade-out {
+    opacity: 0;
+}
